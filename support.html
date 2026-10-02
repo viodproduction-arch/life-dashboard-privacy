@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Life – Hilfe & Kontakt</title>
+<meta name="description" content="Hilfe und Kontakt für die App Your Life / Help and contact for the Your Life app">
+<style>
+  /* Gleiche Gestaltung wie die Datenschutzerklärung (index.html). Lädt nichts von Dritten. */
+  :root {
+    --bg: #f7f7f4;
+    --surface: #ffffff;
+    --text: #1d2320;
+    --muted: #5d6661;
+    --border: #dcdfd8;
+    --accent: #2f6f5e;
+    --accent-soft: #e2efe9;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121614;
+      --surface: #1a201d;
+      --text: #e8ece9;
+      --muted: #9aa59f;
+      --border: #2c3531;
+      --accent: #7fd1ae;
+      --accent-soft: #1f3a2f;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121614; --surface: #1a201d; --text: #e8ece9; --muted: #9aa59f;
+    --border: #2c3531; --accent: #7fd1ae; --accent-soft: #1f3a2f; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .brand { font-weight: 800; font-size: 1.1rem; color: var(--accent); }
+  nav { display: flex; gap: 6px; flex-wrap: wrap; }
+  nav button {
+    font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer;
+    border: 1.5px solid var(--border); background: var(--surface); color: var(--text);
+    border-radius: 999px; padding: 6px 14px; min-height: 40px;
+  }
+  nav button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  h1 { font-size: 1.8rem; line-height: 1.2; margin: 24px 0 8px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  .contact { background: var(--accent-soft); border-radius: 14px; padding: 16px 18px; margin: 16px 0 8px; }
+  .contact p { margin: 0 0 6px; }
+  .contact p:last-child { margin: 0; }
+  .mail { font-size: 1.15rem; font-weight: 700; word-break: break-all; }
+  details { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; margin: 8px 0; padding: 0 16px; }
+  summary { cursor: pointer; font-weight: 600; padding: 12px 0; min-height: 44px; }
+  details p { margin: 0 0 12px; }
+  .note { color: var(--muted); font-size: .95rem; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Your Life</div>
+    <nav aria-label="Sprache / Language">
+      <button type="button" data-lang="de">Deutsch</button>
+      <button type="button" data-lang="en">English</button>
+      <button type="button" data-lang="fr">Français</button>
+      <button type="button" data-lang="it">Italiano</button>
+    </nav>
+  </header>
+
+  <!-- ===================================== DEUTSCH ===================================== -->
+  <article lang="de" data-lang="de">
+    <h1>Hilfe & Kontakt</h1>
+    <div class="contact">
+      <p>Fragen, Probleme oder Ideen? Schreib uns:</p>
+      <p class="mail"><a href="mailto:viodsproduction@gmail.com?subject=Your%20Life">viodsproduction@gmail.com</a></p>
+      <p class="note">Wir antworten in der Regel innerhalb weniger Tage.</p>
+    </div>
+
+    <h2>Häufige Fragen</h2>
+    <details>
+      <summary>Wo sind meine Daten gespeichert?</summary>
+      <p>Nur auf deinem Handy. Es gibt kein Konto und keine Cloud – wir sehen deine Daten nie.</p>
+    </details>
+    <details>
+      <summary>Wie sichere ich meine Daten oder nehme sie auf ein neues Handy mit?</summary>
+      <p>In der App unter <em>Einstellungen → Daten → Backup exportieren</em>. Speichere die Datei z.B. in iCloud Drive oder Google Drive. Auf dem neuen Handy wählst du <em>Backup importieren</em>. Die App erinnert dich einmal im Monat an ein Backup.</p>
+    </details>
+    <details>
+      <summary>Ich habe die App gelöscht. Sind meine Daten weg?</summary>
+      <p>Ja. Weil die Daten nur auf dem Handy liegen, lassen sie sich nur mit einem Backup wiederherstellen.</p>
+    </details>
+    <details>
+      <summary>Wie ändere ich mein kcal-Tagesziel?</summary>
+      <p>Unter <em>Gesundheit → Ernährung → Tagesziel</em> oder <em>Einstellungen → kcal-Tagesziel</em>. Du kannst einen festen Wert eingeben, ihn berechnen lassen oder das Ziel deinem Verbrauch anpassen.</p>
+    </details>
+    <details>
+      <summary>Ich bekomme keine Erinnerungen.</summary>
+      <p>Erlaube Mitteilungen für Your Life in den Einstellungen deines Handys und prüfe, ob die Erinnerung in der App eingeschaltet ist.</p>
+    </details>
+    <details>
+      <summary>Wie funktioniert die App-Sperre?</summary>
+      <p>Unter <em>Einstellungen → App-Sperre</em> schützt du die App mit Face ID, Fingerabdruck oder dem Code deines Handys. Klappt Face ID nicht, kannst du immer den Handy-Code verwenden.</p>
+    </details>
+    <details>
+      <summary>Wie ändere ich die Sprache?</summary>
+      <p>Unter <em>Einstellungen → Sprache</em>: Deutsch, Englisch, Französisch oder Italienisch.</p>
+    </details>
+
+    <h2>Gut zu wissen</h2>
+    <p class="note">Kalorien, Verbrauch und Tagesziele sind Schätzungen und ersetzen keine medizinische oder Ernährungsberatung. Die Finanzfunktionen sind keine Finanzberatung.</p>
+    <p><a href="./">Datenschutzerklärung</a></p>
+  </article>
+
+  <!-- ===================================== ENGLISH ===================================== -->
+  <article lang="en" data-lang="en" hidden>
+    <h1>Help & contact</h1>
+    <div class="contact">
+      <p>Questions, problems or ideas? Write to us:</p>
+      <p class="mail"><a href="mailto:viodsproduction@gmail.com?subject=Your%20Life">viodsproduction@gmail.com</a></p>
+      <p class="note">We usually reply within a few days.</p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>Where is my data stored?</summary>
+      <p>Only on your phone. There is no account and no cloud – we never see your data.</p>
+    </details>
+    <details>
+      <summary>How do I back up my data or move it to a new phone?</summary>
+      <p>In the app under <em>Settings → Data → Export backup</em>. Save the file e.g. in iCloud Drive or Google Drive. On the new phone, choose <em>Import backup</em>. The app reminds you to back up once a month.</p>
+    </details>
+    <details>
+      <summary>I deleted the app. Is my data gone?</summary>
+      <p>Yes. Because the data is only on the phone, it can only be restored from a backup.</p>
+    </details>
+    <details>
+      <summary>How do I change my daily kcal goal?</summary>
+      <p>Under <em>Health → Nutrition → Daily goal</em> or <em>Settings → Daily kcal goal</em>. You can enter a fixed value, have it calculated or let the goal adapt to what you burn.</p>
+    </details>
+    <details>
+      <summary>I don’t get any reminders.</summary>
+      <p>Allow notifications for Your Life in your phone settings and check that the reminder is turned on in the app.</p>
+    </details>
+    <details>
+      <summary>How does the app lock work?</summary>
+      <p>Under <em>Settings → App lock</em> you protect the app with Face ID, fingerprint or your phone passcode. If Face ID doesn’t work, you can always use your passcode.</p>
+    </details>
+    <details>
+      <summary>How do I change the language?</summary>
+      <p>Under <em>Settings → Language</em>: German, English, French or Italian.</p>
+    </details>
+
+    <h2>Good to know</h2>
+    <p class="note">Calories, burned energy and daily goals are estimates and do not replace medical or nutritional advice. The finance features are not financial advice.</p>
+    <p><a href="./?lang=en">Privacy policy</a></p>
+  </article>
+
+  <!-- ===================================== FRANÇAIS ===================================== -->
+  <article lang="fr" data-lang="fr" hidden>
+    <h1>Aide & contact</h1>
+    <div class="contact">
+      <p>Des questions, un problème ou une idée ? Écris-nous :</p>
+      <p class="mail"><a href="mailto:viodsproduction@gmail.com?subject=Your%20Life">viodsproduction@gmail.com</a></p>
+      <p class="note">Nous répondons en général en quelques jours.</p>
+    </div>
+
+    <h2>Questions fréquentes</h2>
+    <details>
+      <summary>Où sont enregistrées mes données ?</summary>
+      <p>Uniquement sur ton téléphone. Pas de compte, pas de cloud – nous ne voyons jamais tes données.</p>
+    </details>
+    <details>
+      <summary>Comment sauvegarder mes données ou les transférer sur un nouveau téléphone ?</summary>
+      <p>Dans l’app sous <em>Réglages → Données → Exporter une sauvegarde</em>. Enregistre le fichier p. ex. dans iCloud Drive ou Google Drive. Sur le nouveau téléphone, choisis <em>Importer une sauvegarde</em>. L’app te rappelle de sauvegarder une fois par mois.</p>
+    </details>
+    <details>
+      <summary>J’ai supprimé l’app. Mes données sont-elles perdues ?</summary>
+      <p>Oui. Comme les données se trouvent uniquement sur le téléphone, elles ne peuvent être restaurées qu’avec une sauvegarde.</p>
+    </details>
+    <details>
+      <summary>Comment modifier mon objectif kcal du jour ?</summary>
+      <p>Sous <em>Santé → Alimentation → Objectif du jour</em> ou <em>Réglages → Objectif kcal du jour</em>. Tu peux saisir une valeur fixe, la faire calculer ou adapter l’objectif à ta dépense.</p>
+    </details>
+    <details>
+      <summary>Je ne reçois pas de rappels.</summary>
+      <p>Autorise les notifications pour Your Life dans les réglages de ton téléphone et vérifie que le rappel est activé dans l’app.</p>
+    </details>
+    <details>
+      <summary>Comment fonctionne le verrouillage de l’app ?</summary>
+      <p>Sous <em>Réglages → Verrouillage</em>, tu protèges l’app avec Face ID, l’empreinte digitale ou le code de ton téléphone. Si Face ID ne fonctionne pas, tu peux toujours utiliser le code.</p>
+    </details>
+    <details>
+      <summary>Comment changer la langue ?</summary>
+      <p>Sous <em>Réglages → Langue</em> : allemand, anglais, français ou italien.</p>
+    </details>
+
+    <h2>Bon à savoir</h2>
+    <p class="note">Les calories, la dépense et les objectifs sont des estimations et ne remplacent pas un conseil médical ou nutritionnel. Les fonctions financières ne constituent pas un conseil financier.</p>
+    <p><a href="./?lang=fr">Politique de confidentialité</a></p>
+  </article>
+
+  <!-- ===================================== ITALIANO ===================================== -->
+  <article lang="it" data-lang="it" hidden>
+    <h1>Aiuto & contatto</h1>
+    <div class="contact">
+      <p>Domande, problemi o idee? Scrivici:</p>
+      <p class="mail"><a href="mailto:viodsproduction@gmail.com?subject=Your%20Life">viodsproduction@gmail.com</a></p>
+      <p class="note">Di solito rispondiamo entro pochi giorni.</p>
+    </div>
+
+    <h2>Domande frequenti</h2>
+    <details>
+      <summary>Dove sono salvati i miei dati?</summary>
+      <p>Solo sul tuo telefono. Nessun account e nessun cloud – non vediamo mai i tuoi dati.</p>
+    </details>
+    <details>
+      <summary>Come salvo i miei dati o li porto su un nuovo telefono?</summary>
+      <p>Nell’app in <em>Impostazioni → Dati → Esporta backup</em>. Salva il file p. es. in iCloud Drive o Google Drive. Sul nuovo telefono scegli <em>Importa backup</em>. L’app ti ricorda il backup una volta al mese.</p>
+    </details>
+    <details>
+      <summary>Ho eliminato l’app. I miei dati sono persi?</summary>
+      <p>Sì. Poiché i dati sono solo sul telefono, si possono ripristinare solo con un backup.</p>
+    </details>
+    <details>
+      <summary>Come cambio il mio obiettivo kcal giornaliero?</summary>
+      <p>In <em>Salute → Alimentazione → Obiettivo giornaliero</em> o <em>Impostazioni → Obiettivo kcal giornaliero</em>. Puoi inserire un valore fisso, farlo calcolare o adattare l’obiettivo al tuo consumo.</p>
+    </details>
+    <details>
+      <summary>Non ricevo promemoria.</summary>
+      <p>Consenti le notifiche per Your Life nelle impostazioni del telefono e controlla che il promemoria sia attivato nell’app.</p>
+    </details>
+    <details>
+      <summary>Come funziona il blocco dell’app?</summary>
+      <p>In <em>Impostazioni → Blocco app</em> proteggi l’app con Face ID, impronta digitale o il codice del telefono. Se Face ID non funziona, puoi sempre usare il codice.</p>
+    </details>
+    <details>
+      <summary>Come cambio la lingua?</summary>
+      <p>In <em>Impostazioni → Lingua</em>: tedesco, inglese, francese o italiano.</p>
+    </details>
+
+    <h2>Buono a sapersi</h2>
+    <p class="note">Calorie, consumo e obiettivi sono stime e non sostituiscono una consulenza medica o nutrizionale. Le funzioni finanziarie non sono una consulenza finanziaria.</p>
+    <p><a href="./?lang=it">Informativa sulla privacy</a></p>
+  </article>
+
+  <footer>Your Life · VIODS PRODUCTION · Küssnacht am Rigi</footer>
+</main>
+
+<script>
+  // Sprache wählen: gespeicherte Wahl → ?lang= in der Adresse → Sprache des Geräts → Deutsch
+  (function () {
+    var langs = ['de', 'en', 'fr', 'it'];
+    function show(lang) {
+      document.querySelectorAll('article[data-lang]').forEach(function (a) { a.hidden = a.dataset.lang !== lang; });
+      document.querySelectorAll('nav button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+      document.documentElement.lang = lang;
+      var titles = { de: 'Your Life – Hilfe & Kontakt', en: 'Your Life – Help & contact', fr: 'Your Life – Aide & contact', it: 'Your Life – Aiuto & contatto' };
+      document.title = titles[lang];
+    }
+    var fromUrl = new URLSearchParams(location.search).get('lang');
+    var saved = null;
+    try { saved = localStorage.getItem('lang'); } catch (e) {}
+    var device = (navigator.language || 'de').slice(0, 2).toLowerCase();
+    var start = [fromUrl, saved, device].find(function (l) { return langs.indexOf(l) >= 0; }) || 'de';
+    show(start);
+    document.querySelectorAll('nav button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        show(b.dataset.lang);
+        try { localStorage.setItem('lang', b.dataset.lang); } catch (e) {}
+      });
+    });
+  })();
+</script>
+</body>
+</html>
